@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #000;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+p {
+  font-size: 16px;
+  strong {
+    font-family: $font-bold;
+  }
+}
+
+ol,
+ul {
+  li {
+    padding: 0;
+  }
+}
+
+ul {
+  li {
+    // путь к кастомной картинке пункта ul
+    // list-style-image: url('../img/ul.png');
+  }
+}
+
+//кастомные пункты списка с цифрами
+ol {
+  // list-style: none;
+  // @include counter(li);
+  li::before {
+    // color: $brand;
+  }
+}
+
+input,
+textarea,
+select,
+button {
+  border-radius: 0 !important;
+  outline: none;
+}
+
+input {
+  padding: 3px 10px 5px 10px;
+  color: #000;
+  border: 1px solid #000;
+  &::placeholder {
+    @include placeholder-color(#000);
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+input.error,
+textarea.error {
+  border-color: #ed1b24 !important;
+  background: #fbd1d3 !important;
+}
+
+svg {
+  display: block;
+  overflow: visible;
+}
+
+html, body {
+  background-color: #936;
+}

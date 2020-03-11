@@ -1,0 +1,48 @@
+.menu {
+  width: 100%;
+  max-width: 1230px;
+  padding: 0 55px 0 125px;
+
+  @include max(1200) {
+    padding: 0 55px 0 55px;
+  }
+}
+
+.menu__logo {
+  display: none;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item {
+  padding: 5px 0;
+  list-style: none;
+}
+
+.menu__link {
+  font-family: $font-light;
+  font-size: 34px;
+  font-weight: 400;
+  position: relative;
+  display: block;
+  transition: .3s;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #4a1f60;
+  @include max(1440) {
+    font-size: 26px;
+  }
+  @include max(1200) {
+    font-size: 22px;
+  }
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
