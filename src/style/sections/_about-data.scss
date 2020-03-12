@@ -6,9 +6,9 @@
   max-width: 1005px;
   margin: 0 auto;
   padding: 120px 30px;
-  @include max(767) {
-  padding: 70px 30px;
 
+  @include max(767) {
+    padding: 70px 30px;
   }
 }
 
@@ -21,13 +21,14 @@
   letter-spacing: 33px;
   text-transform: uppercase;
   color: #fff;
+
   @include max(1200) {
     font-size: 36px;
-    letter-spacing:26px;
+    letter-spacing: 26px;
   }
   @include max(767) {
     font-size: 26px;
-    letter-spacing:16px;
+    letter-spacing: 16px;
   }
 }
 
@@ -39,6 +40,7 @@
     display: inline-block;
     margin-bottom: 25px;
     color: #fff;
+
     @include max(1200) {
       font-size: 20px;
     }
@@ -56,9 +58,10 @@
     text-align: center;
     letter-spacing: 16px;
     color: #fff;
+
     @include max(1200) {
       font-size: 24px;
-    letter-spacing: 12px;
+      letter-spacing: 12px;
     }
   }
 }
