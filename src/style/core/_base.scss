@@ -97,6 +97,20 @@ svg {
   overflow: visible;
 }
 
-html, body {
-  background-color: #936;
+.wrap {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+
+.main {
+  padding-top: 130px;
+
+  @include max(1200) {
+    padding-top: 115px;
+  }
+  @include max(1023) {
+    padding-top: 95px;
+  }
 }

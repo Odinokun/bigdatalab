@@ -1,0 +1,156 @@
+.footer {
+  position: relative;
+  background-color: #141430;
+}
+
+.footer__inn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1820px;
+  margin: 0 auto;
+  padding: 30px 40px 80px 40px;
+
+  @include max(767) {
+    justify-content: center;
+  }
+  @include max(550) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__left {
+  flex: none;
+  width: 100%;
+  max-width: 360px;
+
+  @include max(1200) {
+    max-width: 300px;
+  }
+  @include max(550) {
+    max-width: 270px;
+  }
+  a img {
+    display: block;
+    width: 100%;
+    max-width: 330px;
+
+    @include max(1200) {
+      max-width: 250px;
+    }
+    @include max(550) {
+      max-width: 100%;
+    }
+  }
+}
+
+.footer__items {
+  display: flex;
+  width: 100%;
+  max-width: 1065px;
+  padding: 50px 0 0 0;
+
+  @include max(1023) {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  @include max(767) {
+    max-width: 250px;
+  }
+  @include max(550) {
+    justify-content: center;
+    max-width: 200px;
+  }
+}
+
+.footer__item {
+  width: 33.33%;
+  padding-top: 40px;
+  padding-right: 20px;
+
+  @include max(1023) {
+    width: 50%;
+    padding-top: 15px;
+  }
+  @include max(767) {
+    width: 100%;
+  }
+}
+
+.footer__title {
+  font-family: $font-light;
+  font-size: 26px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #96299b;
+
+  @include max(1200) {
+    font-size: 20px;
+  }
+}
+
+.footer__link {
+  font-family: $font-light;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #96299b;
+
+  @include max(1200) {
+    font-size: 20px;
+  }
+}
+
+.footer__link-icon {
+  flex: none;
+  margin-right: 10px;
+  svg {
+    fill: #96299b;
+    width: 39px;
+    height: 39px;
+
+    @include max(1200) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.footer__link-text {
+  font-family: $font-light;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @include max(1200) {
+    font-size: 20px;
+  }
+}
+
+.footer__decor {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 160px;
+  height: 750px;
+  pointer-events: none;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 900px;
+    transform: rotate(80deg);
+    opacity: .21;
+  }
+}

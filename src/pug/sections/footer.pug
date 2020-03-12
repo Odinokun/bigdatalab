@@ -1,0 +1,43 @@
+//begin footer
+.footer
+  .footer__inn
+    //begin footer__left
+    .footer__left
+      a(href="/")
+        img(src="assets/img/logo-lg.svg" alt="logo")
+    //end footer__left
+
+    //begin footer__items
+    .footer__items
+      
+      //begin footer__item
+      .footer__item
+        h3.footer__title Тел.:
+        a(href="tel:+3800977428583").footer__link + 380 097 742 85 83
+        a(href="tel:+3800977428584").footer__link + 380 097 742 85 84
+        a(href="tel:+3800977428585").footer__link + 380 097 742 85 85
+      //end footer__item
+      
+      //begin footer__item
+      .footer__item
+        h3.footer__title соціальні мережі:
+        a(href="/" target="_blank" rel="nofollow noopener noreferrer").footer__link
+          span.footer__link-icon
+            +svg('fb')
+          span.footer__link-text //bigdatalab
+        a(href="/" target="_blank" rel="nofollow noopener noreferrer").footer__link
+          span.footer__link-icon
+            +svg('inst')
+          span.footer__link-text //bigdatalab
+      //end footer__item
+      
+      //begin footer__item
+      .footer__item
+        h3.footer__title Бот:
+        a(href="https://t.me/datalab_bot" target='_blank' rel="nofollow noopener noreferrer").footer__link @Datalab_BoT
+      //end footer__item
+    //end footer__items
+
+  .footer__decor
+    img(src="assets/img/decor.svg" alt="decor")
+//end footer
