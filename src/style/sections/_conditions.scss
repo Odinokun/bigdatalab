@@ -1,0 +1,124 @@
+.conditions {
+  background-color: rgba(211, 211, 211, .38);
+}
+
+.conditions__inn {
+  width: 100%;
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 30px 30px 40px 30px;
+}
+
+.conditions__title {
+  font-family: $font-light;
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 90px;
+  text-align: center;
+  letter-spacing: 39.48px;
+  text-transform: uppercase;
+  color: #3b2350;
+
+  @include max(1200) {
+    font-size: 50px;
+    margin-bottom: 60px;
+    letter-spacing: 30px;
+  }
+  @include max(767) {
+    font-size: 40px;
+    letter-spacing: 20px;
+  }
+  @include max(550) {
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+}
+
+.conditions__list {
+  display: flex;
+
+  @include max(1023) {
+    flex-wrap: wrap;
+  }
+}
+
+.conditions__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 0 5px 30px 5px;
+  text-align: center;
+
+  @include max(1023) {
+    flex: inherit;
+    width: 33.33%;
+  }
+  @include max(550) {
+    width: 50%;
+  }
+  @include max(375) {
+    width: 100%;
+  }
+}
+
+.conditions__icon--rocket {
+  max-width: 124px;
+}
+
+.conditions__icon--clock {
+  max-width: 120px;
+}
+
+.conditions__icon--calendar {
+  max-width: 123px;
+}
+
+.conditions__icon--price {
+  max-width: 126px;
+}
+
+.conditions__icon--cashback {
+  max-width: 121px;
+}
+
+.conditions__icon--team {
+  max-width: 162px;
+}
+
+.conditions__icon {
+  min-height: 126px;
+  margin: 0 auto 42px;
+
+  @include max(1023) {
+    margin-bottom: 20px;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.conditions__text {
+  font-family: $font-light;
+  font-size: 24px;
+  display: inline-block;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #3b2350;
+
+  @include max(1200) {
+    font-size: 20px;
+  }
+  b {
+    font-weight: bold;
+  }
+}
+
+.conditions__subtext {
+  font-family: $font-light;
+  font-size: 10px;
+  font-weight: 400;
+  max-width: 120px;
+  color: #3b2350;
+}
