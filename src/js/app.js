@@ -5,9 +5,7 @@ $(function() {
   require('./modules/lang')();
   require('./modules/menu')();
   require('./modules/scroll2ancor')();
-
-  // begin Slick slider
-  // require('./modules/slick')();
+  require('./modules/slick')();
 
   // begin Popup
   // require('./modules/popup')();
