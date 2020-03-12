@@ -1,0 +1,60 @@
+.demand {
+  border-bottom: 27px solid #eee;
+  background-color: #f6f6f6;
+}
+
+.demand__inn {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 145px 30px 115px 30px;
+}
+
+.demand__title {
+  font-family: $font-light;
+  font-size: 57px;
+  font-weight: 400;
+  margin-bottom: 55px;
+  text-align: center;
+  letter-spacing: 36px;
+  color: #3b2350;
+
+  @include max(1200) {
+    font-size: 48px;
+    letter-spacing: 28px;
+  }
+  @include max(550) {
+    font-size: 40px;
+    letter-spacing: 20px;
+  }
+}
+
+.demand__list {
+  padding: 0;
+  li {
+    font-family: $font-light;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 45px;
+    list-style: none;
+    color: #3b2350;
+
+    @include max(1200) {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 23px;
+      height: 23px;
+      content: '';
+      border: 3px solid #5d3199;
+      border-radius: 50%;
+    }
+  }
+}
