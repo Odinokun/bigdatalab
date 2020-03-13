@@ -42,6 +42,25 @@ module.exports = function() {
     ]
   });
 
+
+  $('#about-us__slider').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '#about-us__timeline'
+  });
+  $('#about-us__timeline').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '#about-us__slider',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
+
   // end Slick slider
 
 };
