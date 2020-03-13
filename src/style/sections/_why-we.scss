@@ -1,5 +1,24 @@
 .why-we {
   background-color: #5ba8cb;
+  position: relative;
+}
+.why-we__decor{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  overflow: hidden;
+  width: 240px;
+  height: 460px;
+  pointer-events: none;
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 474px;
+    opacity: .21;
+  }
 }
 
 .why-we__inn {

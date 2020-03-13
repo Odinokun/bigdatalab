@@ -1,0 +1,137 @@
+//begin program
+.program#program
+  .program__decor--left
+    img(src="assets/img/decor-blue.svg" alt="decor")
+
+  .program__decor--right
+    img(src="assets/img/decor-blue.svg" alt="decor")
+
+  .program__inn
+    //begin program__header
+    .program__header
+      h2.program__title Програма навчання
+      a(href="#").program__pdf
+        +svg('pdf')
+    //end program__header
+
+    //begin program__top-slider
+    .program__top-slider#program__top-slider
+      .program__top-slide
+        .program__top-slide-inn
+          h6.program__top-slide-text Аналіз даних <span>(математика та машинне навчання)</span>
+      .program__top-slide
+        .program__top-slide-inn
+          h6.program__top-slide-text Інженерія програмного забезпечення для Data Science
+      .program__top-slide
+        .program__top-slide-inn
+          h6.program__top-slide-text Фінальний проект
+    //end program__top-slider
+
+    //begin program__slider
+    .program__slider#program__slider
+      //begin program__slide 01
+      .program__slide
+        .program__slide-item
+          h4.program__slide-title Основи обчислень для Data Science
+          ul.program__slide-list
+            li Основи лінійної алгебри для DS
+            li Методи оптимізації
+            li Основи теорії ймовірностей для DS
+            li Основи математичної статистики для DS
+
+        .program__slide-item
+          h4.program__slide-title Машинне навчання та аналіз даних
+          span Контрольоване машинне навчання
+          ul.program__slide-list
+            li Дерева рішень, класифікація Naive Bayes, звичайна найменша квадратична регресія, логістична регресія, SVM (Support Vector Machine), ансамблеві методи
+          span Неконтрольоване машинне навчання
+          ul.program__slide-list
+            li Алгоритми кластеризації, PCA, SVD, ICA
+            li Посилене машинне навчання
+            li Q-навчання, TD-навчання, генетичні алгоритми
+          span Дослідження даних:
+          ul.program__slide-list
+            li Вибір функцій, асоціація, виявлення аномалії
+
+        .program__slide-item
+          h4.program__slide-title Нейронні мережі та глибоке навчання
+          ul.program__slide-list
+            li Основні поняття нейронних мереж
+            li TensorFlow + Keras
+            li Згорткові нейронні мережі
+            li Рекурентніі нейронні мереж
+
+        .program__slide-item
+          h4.program__slide-title Прогнозний аналіз та аналіз часових рядів
+          ul.program__slide-list
+            li Прогностичне моделювання та аналітика
+            li Інференційна та прогнозна статистика
+            li Машинне навчання для прогнозної аналітики
+            li Регресія та мульти-аналіз (багатократний аналіз)
+            li Узагальнені лінійні моделі
+            li Аналіз та прогнозування часових рядів
+            li Розгортання та вдосконалення прогнозних моделей
+      //end program__slide 01
+
+      //begin program__slide 02
+      .program__slide
+        .program__slide-item
+          h4.program__slide-title Основи програмування та інженерії
+          ul.program__slide-list
+            li Основи мови програмування Python
+            li Бібліотеки Python для аналізу даних (panda, numpy, mathplotlib, scipy, scikit-learn, seaborn, тощо)
+            li Підготовка та попередня обробка даних
+
+        .program__slide-item
+          h4.program__slide-title Сховища даних, бізнес-аналіз та візуалізація даних
+          ul.program__slide-list
+            li Концепція та архітектура сховищ даних
+            li Методика розробки сховищ даних, моделювання даних
+            li Очищення даних та якість процесів ETL / ELT
+            li Загрузца сховищ даних
+            li Ознайомлення з візуалізацією даних, інформаційні панелі даних
+            li Виявлення/Розкриття значення даних за допомогою візуалізації
+            li Від даних до візуального розповіді
+
+        .program__slide-item
+          h4.program__slide-title Інфраструктура та технології великих даних для аналізу даних
+          ul.program__slide-list
+            li Основи хмарних обчислень
+            li Архітектура систем для великих даних
+            li Платформа Hadoop для аналізу великих даних
+            li Бази даних SQL і NoSQL
+            li Програмування на Hive і Pig Latin для великих даних на платформі Hadoop
+            li Потоки даних та потокова аналітика
+            li Управління даними підприємств, організаційні ролі
+            li Безпека великих даних та відповідність стандартам
+
+        .program__slide-item
+          h4.program__slide-title Доменна предметна експертиза
+          span Пропонується на вимогу, специфічний для групи та залежно від наявності доменних експертів
+          span Можливі теми: Фінанси, CRM, Телекомунікації, Веб-реклама та маркетинг
+          span Детальна інформація найближчим часом
+      //end program__slide 02
+
+      //begin program__slide 03
+      .program__slide
+        .program__slide-item
+          h4.program__slide-title Фінальний проект
+          span Студент вибирає фінальний проект із пула задач, запропонованих DS-фахівцями Vodafone, і повинен пройти весь шлях до його реалізації:
+          ul.program__slide-list
+            li Постановка задачі
+            li Отримання дата-сету знеособлених даних від Vodafone
+            li Додатковий збір даних (у разі потреби)
+            li Вивчення і візуалізація даних
+            li Препроцесинг
+            li Вибір моделі і її тренування
+            li Оцінка якості моделі
+          span На випускному іспиті потрібно буде захистити проект перед комісією:
+          ul.program__slide-list
+            li презентація
+            li код
+            li результат
+      //end program__slide 03
+
+    //end program__slider
+
+//end program

@@ -7,4 +7,10 @@ module.exports = function () {
   });
   // end menu & burger
 
+  $('.menu__link').on('click', function () {
+    $('#menu').removeClass('active');
+    $('#burger').removeClass('active');
+
+  });
+
 };

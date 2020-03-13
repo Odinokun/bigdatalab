@@ -1,5 +1,25 @@
 .news {
+  position: relative;
   background-color: #5d3199;
+}
+
+.news__decor--right {
+  position: absolute;
+  right: 0;
+  top: -150px;
+  overflow: hidden;
+  width: 240px;
+  height: 420px;
+  pointer-events: none;
+  img {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    display: block;
+    width: 413px;
+    transform: rotate(25deg);
+    opacity: .21;
+  }
 }
 
 .news__inn {
