@@ -49,22 +49,6 @@ ul {
   }
 }
 
-ul {
-  li {
-    // путь к кастомной картинке пункта ul
-    // list-style-image: url('../img/ul.png');
-  }
-}
-
-//кастомные пункты списка с цифрами
-ol {
-  // list-style: none;
-  // @include counter(li);
-  li::before {
-    // color: $brand;
-  }
-}
-
 input,
 textarea,
 select,
@@ -105,12 +89,15 @@ svg {
 }
 
 .main {
-  padding-top: 130px;
+  padding-top: 80px;
+}
 
-  @include max(1200) {
-    padding-top: 115px;
-  }
-  @include max(1023) {
-    padding-top: 95px;
+.title {
+  font-size: 44px;
+  letter-spacing: 18px;
+
+  @include max(767) {
+    font-size: 30px;
+    letter-spacing: 12px;
   }
 }

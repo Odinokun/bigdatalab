@@ -10,9 +10,9 @@
   left: 0;
   margin: auto;
   background-image: url('../img/bg-fractal.jpg');
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 50%;
+  background-size: cover;
   video {
     width: 100%;
     height: 100%;
@@ -24,10 +24,15 @@
 
 .top__inn {
   position: relative;
+  overflow: hidden;
   width: 100%;
   max-width: 1260px;
   margin: 0 auto;
   padding: 110px 30px 30px 30px;
+
+  @include max(767) {
+    padding: 50px 30px 30px 30px;
+  }
 }
 
 .top__logo {
@@ -38,14 +43,15 @@
   img {
     display: block;
     width: 100%;
-    max-width: 900px;
-    margin-left: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    transform: translateX(80px);
 
-    @include max(1440) {
-      max-width: 600px;
+    @include max(550) {
+      transform: translateX(30px);
     }
-    @include max(1200) {
-      max-width: 450px;
+    @include max(375) {
+      transform: translateX(10px);
     }
   }
 }
@@ -53,7 +59,7 @@
 .top__text {
   display: flex;
   flex-direction: column;
-  max-width: 1260px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 0 50px;
 
@@ -62,18 +68,11 @@
   }
   span {
     font-family: $font-light;
-    font-size: 34px;
+    font-size: 18px;
     font-weight: 400;
     display: inline-block;
+    margin-bottom: 15px;
     color: #e8e8e8;
-
-    @include max(1200) {
-      font-size: 24px;
-      margin-bottom: 15px;
-    }
-    @include max(550) {
-      font-size: 18px;
-    }
 
     b {
       font-family: $font-bold;
@@ -84,13 +83,9 @@
 
 span.top__text-ps {
   font-family: $font-light;
-  font-size: 19px;
+  font-size: 14px;
   font-weight: 400;
   display: inline-block;
   margin-left: auto;
   color: #fff;
-
-  @include max(550) {
-    font-size: 14px;
-  }
 }

@@ -7,15 +7,9 @@
   display: flex;
   align-items: center;
   width: 100%;
-  min-height: 130px;
+  min-height: 80px;
   background-color: #fff;
 
-  @include max(1200) {
-    min-height: 115px;
-  }
-  @include max(1023) {
-    min-height: 95px;
-  }
   &::before {
     position: absolute;
     z-index: 10;
@@ -33,13 +27,10 @@
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1780px;
+  max-width: 990px;
   margin: 0 auto;
-  padding: 17px 40px;
+  padding: 10px 40px;
 
-  @include max(1023) {
-    padding: 10px 40px;
-  }
   @include max(550) {
     padding: 10px 20px;
   }
@@ -49,15 +40,8 @@
   position: relative;
   z-index: 20;
   display: block;
-  max-width: 185px;
-
-  @include max(1023) {
-    max-width: 140px;
-    margin-right: auto;
-  }
-  @include max(767) {
-    max-width: 120px;
-  }
+  max-width: 110px;
+  margin-right: auto;
   img {
     display: block;
     width: 100%;
