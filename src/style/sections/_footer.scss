@@ -5,70 +5,49 @@
 
 .footer__inn {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 1540px;
   margin: 0 auto;
   padding: 10px 40px 30px 40px;
 
-  @include max(767) {
-    justify-content: center;
-  }
   @include max(550) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.footer__left {
-  flex: none;
-  width: 100%;
-  max-width: 260px;
-
-  @include max(550) {
-    padding-top: 20px;
-  }
-  a img {
-    display: block;
-    width: 100%;
-    max-width: 230px;
-
-    @include max(550) {
-      max-width: 100%;
-    }
+    padding: 10px 30px 30px 30px;
   }
 }
 
 .footer__items {
   display: flex;
+  justify-content: center;
   width: 100%;
   max-width: 1065px;
-  padding: 50px 0 0 0;
 
-  @include max(1023) {
-    justify-content: flex-end;
-    flex-wrap: wrap;
-  }
   @include max(767) {
-    max-width: 250px;
+    flex-wrap: wrap;
+    max-width: 500px;
   }
   @include max(550) {
-    justify-content: center;
-    max-width: 200px;
+    width: min-content;
   }
 }
 
 .footer__item {
-  width: 33.33%;
-  padding-top: 40px;
-  padding-right: 20px;
+  width: 25%;
+  padding: 40px 30px 0 10px;
 
-  @include max(1023) {
-    width: 50%;
-    padding-top: 15px;
-  }
   @include max(767) {
+    width: 50%;
+  }
+  @include max(550) {
+    //width: auto;
+    //min-width: 51%;
     width: 100%;
+    padding: 40px 0 0 0;
+  }
+  img {
+    display: block;
+    max-width: 200px;
   }
 }
 
@@ -87,7 +66,7 @@
 
 .footer__link {
   font-family: $font-light;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1;
   display: flex;
@@ -97,10 +76,6 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #96299b;
-
-  @include max(1023) {
-    font-size: 20px;
-  }
 }
 
 .footer__link-icon {
@@ -115,14 +90,11 @@
 
 .footer__link-text {
   font-family: $font-light;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1;
+  white-space: nowrap;
   text-transform: uppercase;
-
-  @include max(1023) {
-    font-size: 20px;
-  }
 }
 
 .footer__decor {
@@ -132,6 +104,7 @@
   overflow: hidden;
   width: 160px;
   height: 750px;
+  white-space: nowrap;
   pointer-events: none;
   img {
     position: absolute;

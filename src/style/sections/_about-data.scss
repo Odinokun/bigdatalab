@@ -23,12 +23,18 @@
 }
 
 .about-data__inn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 1005px;
+  min-height: calc(100vh - 80px);
   margin: 0 auto;
-  padding: 120px 30px;
+  padding: 70px 30px;
 
-  @include max(767) {
-    padding: 70px 30px;
+  @include max(1440) {
+    display: block;
+    min-height: 0;
+    padding: 50px 30px;
   }
 }
 
@@ -44,7 +50,7 @@
 .about-data__text {
   p {
     font-family: $font-light;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     display: inline-block;
     margin-bottom: 25px;
@@ -58,7 +64,7 @@
   text-align: center;
   span {
     font-family: $font-light;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
     letter-spacing: 12px;

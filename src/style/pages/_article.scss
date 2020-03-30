@@ -60,40 +60,19 @@
   padding: 15px 30px 175px 30px;
   p {
     font-family: $font-light;
-    font-size: 36px;
+    font-size: 18px;
     font-weight: 400;
     color: #fff;
-
-    @include max(1200) {
-      font-size: 28px;
-    }
-    @include max(1023) {
-      font-size: 22px;
-    }
-    @include max(550) {
-      font-size: 18px;
-    }
   }
 }
 
 .article__title {
   font-family: $font-light;
-  font-size: 111px;
   font-weight: 400;
   margin-bottom: 30px;
   text-transform: uppercase;
   color: #fff;
 
-  @include max(1200) {
-    font-size: 80px;
-  }
-  @include max(1023) {
-    font-size: 50px;
-  }
-  @include max(550) {
-    font-size: 30px;
-    margin-bottom: 15px;
-  }
 }
 
 .article__bottom {
@@ -104,18 +83,9 @@
 
 .article__back {
   font-family: $font-light;
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 400;
   text-decoration: none;
   color: #fff;
 
-  @include max(1200) {
-    font-size: 28px;
-  }
-  @include max(1023) {
-    font-size: 22px;
-  }
-  @include max(550) {
-    font-size: 18px;
-  }
 }

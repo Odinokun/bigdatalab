@@ -92,12 +92,23 @@ svg {
   padding-top: 80px;
 }
 
+.edits-that-we-make-the-third-week {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px);
+
+  @include max(1440) {
+    display: block;
+    min-height: 0;
+  }
+}
+
 .title {
-  font-size: 44px;
-  letter-spacing: 18px;
+  font-size: 32px;
+  letter-spacing: 12px;
 
   @include max(767) {
-    font-size: 30px;
-    letter-spacing: 12px;
+    font-size: 28px;
+    letter-spacing: 10px;
   }
 }
