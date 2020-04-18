@@ -5,8 +5,8 @@
 
 .news__decor--right {
   position: absolute;
-  right: 0;
   top: -150px;
+  right: 0;
   overflow: hidden;
   width: 240px;
   height: 420px;
@@ -30,22 +30,11 @@
 
 .news__title {
   font-family: $font-light;
-  font-size: 60px;
   font-weight: 400;
   margin-bottom: 50px;
   text-align: center;
-  letter-spacing: 22.8px;
   text-transform: uppercase;
   color: #fff;
-
-  @include max(1200) {
-    font-size: 36px;
-    letter-spacing: 22px;
-  }
-  @include max(767) {
-    font-size: 26px;
-    letter-spacing: 16px;
-  }
 }
 
 .news-slider {
@@ -100,6 +89,7 @@
   width: 33.33%;
   height: auto;
   padding: 0 15px;
+  text-decoration: none;
 }
 
 .news-slider__img {
@@ -114,14 +104,10 @@
 
 .news-slider__title {
   font-family: $font-light;
-  font-size: 46px;
+  font-size: 27px;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
-
-  @include max(1200) {
-    font-size: 38px;
-  }
 }
 
 .news-slider__text {
@@ -133,31 +119,12 @@
   margin-bottom: 40px;
   text-align: center;
   color: #fff;
-}
-
-.news-slider__btn {
-  font-family: $font-light;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 46px;
-  display: block;
-  width: 100%;
-  max-width: 290px;
-  height: 52px;
-  margin-top: auto;
-  padding: 0 30px;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 10px;
-  color: #fff;
-  border: 3px solid #fff;
-
-  @include max(1200) {
-    font-size: 20px;
-    line-height: 40px;
-    max-width: 240px;
-    height: 46px;
-    letter-spacing: 4px;
-    border: 2px solid #fff;
+  p,
+  span {
+    display: inline-block;
+  }
+  span {
+    line-height: 1;
+    padding-left: 10px;
   }
 }

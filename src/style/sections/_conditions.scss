@@ -4,38 +4,27 @@
 
 .conditions__inn {
   width: 100%;
-  max-width: 1330px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 30px 30px 40px 30px;
+  padding: 50px 30px 40px 30px;
+
+  @include max(1023) {
+    max-width: 800px;
+  }
 }
 
 .conditions__title {
   font-family: $font-light;
-  font-size: 64px;
   font-weight: 400;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
   text-align: center;
-  letter-spacing: 39.48px;
   text-transform: uppercase;
   color: #3b2350;
-
-  @include max(1200) {
-    font-size: 50px;
-    margin-bottom: 60px;
-    letter-spacing: 30px;
-  }
-  @include max(767) {
-    font-size: 40px;
-    letter-spacing: 20px;
-  }
-  @include max(550) {
-    font-size: 30px;
-    letter-spacing: 10px;
-  }
 }
 
 .conditions__list {
   display: flex;
+  justify-content: space-between;
 
   @include max(1023) {
     flex-wrap: wrap;
@@ -46,12 +35,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
   padding: 0 5px 30px 5px;
   text-align: center;
 
   @include max(1023) {
-    flex: inherit;
     width: 33.33%;
   }
   @include max(550) {
@@ -63,36 +50,33 @@
 }
 
 .conditions__icon--rocket {
-  max-width: 124px;
+  max-width: 62px;
 }
 
 .conditions__icon--clock {
-  max-width: 120px;
+  max-width: 60px;
 }
 
 .conditions__icon--calendar {
-  max-width: 123px;
+  max-width: 61px;
 }
 
 .conditions__icon--price {
-  max-width: 126px;
+  max-width: 63px;
 }
 
 .conditions__icon--cashback {
-  max-width: 121px;
+  max-width: 60px;
 }
 
 .conditions__icon--team {
-  max-width: 162px;
+  max-width: 81px;
 }
 
 .conditions__icon {
-  min-height: 126px;
-  margin: 0 auto 42px;
+  min-height: 63px;
+  margin: 0 auto 30px;
 
-  @include max(1023) {
-    margin-bottom: 20px;
-  }
   img {
     display: block;
     width: 100%;
@@ -101,15 +85,11 @@
 
 .conditions__text {
   font-family: $font-light;
-  font-size: 24px;
+  font-size: 20px;
   display: inline-block;
   margin-bottom: 5px;
   text-align: center;
   color: #3b2350;
-
-  @include max(1200) {
-    font-size: 20px;
-  }
   b {
     font-weight: bold;
   }

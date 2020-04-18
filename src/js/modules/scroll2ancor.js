@@ -6,7 +6,7 @@ module.exports = function() {
        // e.preventDefault();
        var anchor = $(this);
        $('html, body').stop().animate({
-        scrollTop: $(anchor.attr('href')).offset().top - 92 + 'px'
+        scrollTop: $(anchor.attr('href')).offset().top - 78 + 'px'
        }, 1000);
     });
     return false;

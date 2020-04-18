@@ -1,12 +1,9 @@
 .menu {
   z-index: 20;
   width: 100%;
-  max-width: 1210px;
-  padding: 0 35px 0 125px;
+  max-width: 750px;
+  padding: 0 55px 0 55px;
 
-  @include max(1200) {
-    padding: 0 55px 0 55px;
-  }
   @include max(1023) {
     position: absolute;
     z-index: 5;
@@ -43,7 +40,7 @@
 
 .menu__link {
   font-family: $font-light;
-  font-size: 34px;
+  font-size: 18px;
   font-weight: 400;
   position: relative;
   display: block;
@@ -51,13 +48,6 @@
   white-space: nowrap;
   text-decoration: none;
   color: #4a1f60;
-
-  @include max(1440) {
-    font-size: 26px;
-  }
-  @include max(1200) {
-    font-size: 22px;
-  }
   &:hover {
     transform: translateY(-3px);
   }

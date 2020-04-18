@@ -1,15 +1,21 @@
 .why-we {
-  background-color: #5ba8cb;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #5ba8cb;
+
+  flex-grow: 1;
 }
-.why-we__decor{
+
+.why-we__decor {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   left: 0;
   overflow: hidden;
   width: 240px;
   height: 460px;
+  transform: translateY(-50%);
   pointer-events: none;
   img {
     position: absolute;
@@ -29,20 +35,10 @@
 
 .why-we__title {
   font-family: $font-light;
-  font-size: 52px;
   font-weight: 400;
   margin-bottom: 40px;
   text-align: center;
-  letter-spacing: 18.24px;
   color: #3b2350;
-
-  @include max(1200) {
-    font-size: 36px;
-    letter-spacing: 12px;
-  }
-  @include max(767) {
-    line-height: 1.1;
-  }
 }
 
 .why-we__list {
@@ -50,33 +46,26 @@
   padding: 0;
   li {
     font-family: $font-light;
-    font-size: 27px;
+    font-size: 18px;
     font-weight: 400;
     position: relative;
-    padding-left: 45px;
+    padding-left: 35px;
     list-style: none;
+    letter-spacing: 2px;
     color: #3b2350;
-
-    @include max(1200) {
-      font-size: 22px;
-    }
 
     b {
       font-weight: bold;
     }
     &::before {
       position: absolute;
-      top: 6px;
+      top: 3px;
       left: 0;
-      width: 23px;
-      height: 23px;
+      width: 18px;
+      height: 18px;
       content: '';
       border: 3px solid #fff;
       border-radius: 50%;
-
-      @include max(1200) {
-        top: 3px;
-      }
     }
   }
 }

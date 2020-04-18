@@ -40,11 +40,17 @@
 }
 
 .program__inn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  padding: 70px 100px;
+  min-height: calc(100vh - 80px);
+  padding: 50px;
 
-  @include max(1200) {
-    padding: 70px 50px;
+  @include max(1440) {
+    display: block;
+    min-height: 0;
+    padding: 50px 30px;
   }
   @include max(550) {
     padding: 40px 30px;
@@ -55,43 +61,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .program__title {
   font-family: $font-light;
-  font-size: 52px;
   font-weight: 400;
-  line-height: 50.16px;
   text-align: center;
-  letter-spacing: 32.08px;
   text-transform: uppercase;
   color: #3b2350;
-
-  @include max(1440) {
-    font-size: 44px;
-    line-height: 1.2;
-    letter-spacing: 22px;
-  }
-  @include max(1200) {
-    font-size: 36px;
-    letter-spacing: 16px;
-  }
-  @include max(550) {
-    font-size: 26px;
-  }
-  @include max(375) {
-    font-size: 22px;
-    letter-spacing: 10px;
-  }
 }
 
 .program__pdf {
   display: block;
+  margin-left: 10px;
   svg {
     fill: #40484b;
-    width: 71px;
-    height: 82px;
+    width: 30px;
+    height: 40px;
+    margin-bottom: 7px;
   }
 }
 
@@ -163,25 +151,21 @@
 
 .program__top-slide-text {
   font-family: $font-light;
-  font-size: 27px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.2;
   margin: 0;
   transition: .5s;
   letter-spacing: -.27px;
   color: #503e61;
-
-  @include max(1440) {
-    font-size: 22px;
-    line-height: 1.2;
-  }
 }
 
 //end #program__top-slider
 
 //begin #program__slider
 .program__slider {
-  margin-bottom: 30px;
+  max-width: 1600px;
+  margin: 0 auto 30px;
 }
 
 .program__slide {
@@ -211,45 +195,32 @@
 
   span {
     font-family: $font-light;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.1;
     color: #3b2350;
-
-    @include max(1440) {
-      font-size: 18px;
-    }
   }
 }
 
 .program__slide-title {
   font-family: $font-light;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: center;
   color: #3b2350;
-
-  @include max(1440) {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
 }
 
 .program__slide-list {
   padding-left: 20px;
   li {
     font-family: $font-light;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.1;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #3b2350;
-
-    @include max(1440) {
-      font-size: 18px;
-    }
   }
 }
 

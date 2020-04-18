@@ -6,12 +6,13 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1450px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 70px 30px 30px 30px;
+  padding: 50px 30px 10px 30px;
 
   @include max(767) {
     flex-wrap: wrap;
+    max-width: 600px;
   }
 }
 
@@ -22,32 +23,21 @@
   width: 25%;
   padding: 0 10px 40px 10px;
 
-  @include max(1023) {
+  @include max(767) {
     width: 50%;
   }
-}
-
-.top-items__item--calendar img {
-  max-width: 114px;
-}
-
-.top-items__item--stopwatch img {
-  max-width: 106px;
-}
-
-.top-items__item--brain img {
-  max-width: 121px;
-}
-
-.top-items__item--divice img {
-  max-width: 125px;
+  @include max(375) {
+    width: 100%;
+  }
+  img {
+    max-width: 55px;
+  }
 }
 
 .top-items__item--divice {
   .top-items__text {
     line-height: 1.2;
     display: inline-block;
-    transform: translateY(10px);
   }
 }
 
@@ -56,19 +46,8 @@
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  min-height: 125px;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
 
-  @include max(1200) {
-    margin-bottom: 35px;
-  }
-  @include max(1023) {
-    max-width: 70%;
-    margin-bottom: 10px;
-  }
-  @include max(767) {
-    min-height: 0;
-  }
   img {
     display: block;
     width: 100%;
@@ -77,28 +56,18 @@
 
 .top-items__number {
   font-family: $font-light;
-  font-size: 92px;
+  font-size: 40px;
   font-weight: 400;
   line-height: 1;
   text-align: center;
   letter-spacing: 11.07px;
   text-transform: uppercase;
   color: #5d3199;
-
-  @include max(1023) {
-    font-size: 60px;
-  }
-  @include max(550) {
-    font-size: 40px;
-  }
-  @include max(375) {
-    font-size: 30px;
-  }
 }
 
 .top-items__text {
   font-family: $font-light;
-  font-size: 31px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1;
   max-width: 200px;
@@ -106,14 +75,4 @@
   letter-spacing: 4.03px;
   text-transform: uppercase;
   color: #5d3199;
-
-  @include max(1023) {
-    font-size: 24px;
-  }
-  @include max(550) {
-    font-size: 20px;
-  }
-  @include max(375) {
-    font-size: 17px;
-  }
 }
