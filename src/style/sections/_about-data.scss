@@ -23,19 +23,9 @@
 }
 
 .about-data__inn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1005px;
-  min-height: calc(100vh - 80px);
+  max-width: 1000px;
   margin: 0 auto;
   padding: 70px 30px;
-
-  @include max(1440) {
-    display: block;
-    min-height: 0;
-    padding: 50px 30px;
-  }
 }
 
 .about-data__title {

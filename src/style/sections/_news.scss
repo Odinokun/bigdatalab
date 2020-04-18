@@ -23,18 +23,9 @@
 }
 
 .news__inn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   max-width: 1560px;
-  min-height: calc(100vh - 80px);
   margin: 0 auto;
   padding: 80px 30px 100px 30px;
-
-  @include max(1440) {
-    display: block;
-    min-height: 0;
-  }
 }
 
 .news__title {
@@ -98,6 +89,7 @@
   width: 33.33%;
   height: auto;
   padding: 0 15px;
+  text-decoration: none;
 }
 
 .news-slider__img {
@@ -127,4 +119,12 @@
   margin-bottom: 40px;
   text-align: center;
   color: #fff;
+  p,
+  span {
+    display: inline-block;
+  }
+  span {
+    line-height: 1;
+    padding-left: 10px;
+  }
 }

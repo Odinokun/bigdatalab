@@ -40,20 +40,18 @@
 }
 
 .program__inn {
-  width: 100%;
-  padding: 50px;
-
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
   min-height: calc(100vh - 80px);
+  padding: 50px;
+
   @include max(1440) {
     display: block;
     min-height: 0;
     padding: 50px 30px;
   }
-
   @include max(550) {
     padding: 40px 30px;
   }
@@ -79,8 +77,9 @@
   margin-left: 10px;
   svg {
     fill: #40484b;
-    width: 71px;
-    height: 82px;
+    width: 30px;
+    height: 40px;
+    margin-bottom: 7px;
   }
 }
 
