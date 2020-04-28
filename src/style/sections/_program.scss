@@ -164,8 +164,10 @@
 
 //begin #program__slider
 .program__slider {
+  width: 100%;
   max-width: 1600px;
   margin: 0 auto 30px;
+  pointer-events: none;
 }
 
 .program__slide {
@@ -182,6 +184,7 @@
   max-width: 800px;
   margin: 0 10px 20px 10px;
   padding: 60px 30px;
+  user-select: none;
   background-color: #ceecfa;
 
   @include max(1200) {

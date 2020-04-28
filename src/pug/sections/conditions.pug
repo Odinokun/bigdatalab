@@ -2,37 +2,90 @@
 .conditions#conditions
   .conditions__inn
     h2.conditions__title.title Умови навчання
-    //begin conditions__list
-    .conditions__list
-      .conditions__item
-        .conditions__icon.conditions__icon--rocket
-          img(src="assets/img/icons/rocket.png" alt="icon")
-        span.conditions__text <b>Старт навчання</b> <br>Березень 2020
 
-      .conditions__item
-        .conditions__icon.conditions__icon--clock
-          img(src="assets/img/icons/clock.png" alt="icon")
-        span.conditions__text <b>Тривалість</b> <br> 6 місяців <br> 240 лекційних годин
+    //begin conditions__header
+    .conditions__header
+      h3.conditions__header-title.active(data-tab='online') Big data lab online
+      h3.conditions__header-title(data-tab='offline') Big data lab kyiv
+    //end conditions__header
 
-      .conditions__item
-        .conditions__icon.conditions__icon--calendar
-          img(src="assets/img/icons/calendar.png" alt="icon")
-        span.conditions__text <b>Розклад</b> <br> Ср. Пт. 19:00-22:00 <br> Сб. 10:00-17:00
+    //begin conditions__body
+    .conditions__body
+      //begin conditions__list online
+      .conditions__list#online.active
+        .conditions__item
+          .conditions__icon.conditions__icon--rocket
+            img(src="assets/img/icons/rocket.png" alt="icon")
+          span.conditions__text <b>Старт навчання</b> <br> Березень 2020
 
-      .conditions__item
-        .conditions__icon.conditions__icon--price
-          img(src="assets/img/icons/price.png" alt="icon")
-        span.conditions__text <b>Вартість</b> <br> $3500
+        .conditions__item
+          .conditions__icon.conditions__icon--camera
+            img(src="assets/img/icons/camera.png" alt="icon")
+          span.conditions__text <b>Формат</b><br>Вебінар, доступні записи лекцій
 
-      .conditions__item
-        .conditions__icon.conditions__icon--cashback
-          img(src="assets/img/icons/cashback.png" alt="icon")
-        span.conditions__text <b>Cashback</b> <br> 50%*
-        span.conditions__subtext *При умові успішного захисту фінального проекту.
+        .conditions__item
+          .conditions__icon.conditions__icon--team-circle
+            img(src="assets/img/icons/team-circle.png" alt="icon")
+          span.conditions__text <b>Розмір групи</b><br>40
 
-      .conditions__item
-        .conditions__icon.conditions__icon--team
-          img(src="assets/img/icons/team.png" alt="icon")
-        span.conditions__text <b>Залишилось місць</b> <br> 2
-    //end conditions__list
+        .conditions__item
+          .conditions__icon.conditions__icon--clock
+            img(src="assets/img/icons/clock.png" alt="icon")
+          span.conditions__text <b>Тривалість</b><br>6 місяців<br>240 лекційних годин<br>240 годин практики,<br>60 годин консультацій
+
+        .conditions__item
+          .conditions__icon.conditions__icon--calendar
+            img(src="assets/img/icons/calendar.png" alt="icon")
+          span.conditions__text <b>Розклад</b><br>Ср. Пт. 19:00-22:00 <br> Сб. 10:00-17:00
+
+        .conditions__item
+          .conditions__icon.conditions__icon--price
+            img(src="assets/img/icons/price.png" alt="icon")
+          span.conditions__text <b>Вартість</b> <br>визначається
+
+        .conditions__item
+          .conditions__icon.conditions__icon--team
+            img(src="assets/img/icons/team.png" alt="icon")
+          span.conditions__text <b>Залишилось місць</b> <br> 40
+      //end conditions__list online
+
+      //begin conditions__list kyiv
+      .conditions__list#offline
+        .conditions__item
+          .conditions__icon.conditions__icon--rocket
+            img(src="assets/img/icons/rocket.png" alt="icon")
+          span.conditions__text <b>Старт навчання</b> <br> визначається
+
+        .conditions__item
+          .conditions__icon.conditions__icon--room
+            img(src="assets/img/icons/room.png" alt="icon")
+          span.conditions__text <b>Формат</b><br>Аудиторія<br>(Лейпцизька 15)
+
+        .conditions__item
+          .conditions__icon.conditions__icon--team-circle
+            img(src="assets/img/icons/team-circle.png" alt="icon")
+          span.conditions__text <b>Розмір групи</b><br>20
+
+        .conditions__item
+          .conditions__icon.conditions__icon--clock
+            img(src="assets/img/icons/clock.png" alt="icon")
+          span.conditions__text <b>Тривалість</b><br>6 місяців,<br>240 лекційних годин,<br>240 годин практики,<br>онлайн консультації
+
+        .conditions__item
+          .conditions__icon.conditions__icon--calendar
+            img(src="assets/img/icons/calendar.png" alt="icon")
+          span.conditions__text <b>Розклад</b><br>Ср. Пт. 19:00-22:00 <br> Сб. 10:00-17:00
+
+        .conditions__item
+          .conditions__icon.conditions__icon--price
+            img(src="assets/img/icons/price.png" alt="icon")
+          span.conditions__text <b>Вартість</b><br>$3000<br><br>Кэшбек $1000<br><span class='conditions__text--sm'>* За умови успішного<br>захисту фінального<br>проекту)<span>
+
+        .conditions__item
+          .conditions__icon.conditions__icon--team
+            img(src="assets/img/icons/team.png" alt="icon")
+          span.conditions__text <b>Залишилось місць</b> <br> 40
+      //end conditions__list kyiv
+    //end conditions__body
+
 //end conditions

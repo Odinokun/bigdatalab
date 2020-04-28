@@ -4,30 +4,97 @@
 
 .conditions__inn {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 50px 30px 40px 30px;
 
-  @include max(1023) {
-    max-width: 800px;
+  @include max(1200) {
+    max-width: 900px;
   }
 }
 
 .conditions__title {
   font-family: $font-light;
   font-weight: 400;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #3b2350;
 }
 
-.conditions__list {
+.conditions__header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 30px;
 
   @include max(1023) {
+    flex-direction: column;
+  }
+}
+
+.conditions__header-title {
+  font-family: $font-light;
+  font-size: 22px;
+  position: relative;
+  cursor: pointer;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #c8c5cb;
+
+  @include max(1023) {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    width: 7px;
+    height: 25px;
+    content: '';
+    background-color: #5d3199;
+
+    @include max(1023) {
+      bottom: -4px;
+      left: 0;
+      width: 25px;
+      height: 5px;
+      margin: auto;
+    }
+  }
+  &:first-child {
+    padding-right: 55px;
+
+    @include max(1023) {
+      padding-right: 0;
+    }
+  }
+  &:last-child {
+    padding-left: 55px;
+
+    @include max(1023) {
+      padding-left: 0;
+    }
+    &::before {
+      display: none;
+    }
+  }
+  &.active {
+    pointer-events: none;
+    color: #3b2350;
+  }
+}
+
+.conditions__list {
+  display: none;
+  justify-content: space-between;
+
+  @include max(1200) {
+    justify-content: space-around;
     flex-wrap: wrap;
+  }
+  &.active {
+    display: flex;
   }
 }
 
@@ -35,22 +102,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 17%;
   padding: 0 5px 30px 5px;
   text-align: center;
 
-  @include max(1023) {
+  @include max(1200) {
+    width: 25%;
+  }
+  @include max(767) {
     width: 33.33%;
   }
   @include max(550) {
     width: 50%;
   }
-  @include max(375) {
-    width: 100%;
-  }
 }
 
 .conditions__icon--rocket {
-  max-width: 62px;
+  max-width: 60px;
+}
+
+.conditions__icon--camera {
+  max-width: 58px;
+}
+
+.conditions__icon--team-circle {
+  max-width: 66px;
 }
 
 .conditions__icon--clock {
@@ -65,12 +141,12 @@
   max-width: 63px;
 }
 
-.conditions__icon--cashback {
-  max-width: 60px;
+.conditions__icon--team {
+  max-width: 80px;
 }
 
-.conditions__icon--team {
-  max-width: 81px;
+.conditions__icon--room {
+  max-width: 85px;
 }
 
 .conditions__icon {
@@ -95,10 +171,13 @@
   }
 }
 
-.conditions__subtext {
+.conditions__subtext,
+.conditions__text--sm {
   font-family: $font-light;
   font-size: 10px;
   font-weight: 400;
+  display: block;
   max-width: 120px;
+  text-align: right;
   color: #3b2350;
 }
