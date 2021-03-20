@@ -94,11 +94,19 @@
     top: 14px;
     right: 0;
     left: 0;
-    width: calc(100% - 40%);
+    width: calc(100% - 32%);
     height: 2px;
     margin: auto;
     content: '';
     background-color: #959595;
+    @include max(767) {
+      width: calc(100% - 35%);
+
+    }
+    @include max(550) {
+      width: calc(100% - 30%);
+
+    }
   }
 }
 
@@ -129,6 +137,7 @@
     height: 70px;
     letter-spacing: 2px;
   }
+  &.slick-current,
   &.slick-center {
     color: #803bb6;
     &::before {

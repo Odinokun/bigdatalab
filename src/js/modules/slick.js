@@ -53,7 +53,7 @@ module.exports = function() {
   });
   $('#about-us__timeline').slick({
     infinite: false,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '#about-us__slider',
     dots: true,

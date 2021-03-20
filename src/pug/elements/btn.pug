@@ -1,4 +1,19 @@
-//begin main-btn
-a(href="https://docs.google.com/forms/d/108YJgrf9fs43-p6xDKd5n7W3xANd4Gshg91fH0emvN4/viewform?edit_requested=true" target="_blank" rel="nofollow noopener noreferrer").main-btn
-  span Записатися <br> на курс
-//end main-btn
+.main-btn__warp
+  //begin main-btn
+  a(href="https://docs.google.com/forms/d/108YJgrf9fs43-p6xDKd5n7W3xANd4Gshg91fH0emvN4/viewform?edit_requested=true" target="_blank" rel="nofollow noopener noreferrer").main-btn.main-btn--register
+    .main-btn__icon
+      +svg('question')
+    span питання та <br>відповіді
+  //end main-btn
+
+  //begin main-btn
+  a(href="https://docs.google.com/forms/d/108YJgrf9fs43-p6xDKd5n7W3xANd4Gshg91fH0emvN4/viewform?edit_requested=true" target="_blank" rel="nofollow noopener noreferrer").main-btn.main-btn--programm
+    .main-btn__icon
+      +svg('programm')
+    span Програма <br> навчання
+  //end main-btn
+
+  //begin main-btn
+  a(href="https://docs.google.com/forms/d/108YJgrf9fs43-p6xDKd5n7W3xANd4Gshg91fH0emvN4/viewform?edit_requested=true" target="_blank" rel="nofollow noopener noreferrer").main-btn.main-btn--reserve
+    span Записатися <br> на курс
+  //end main-btn

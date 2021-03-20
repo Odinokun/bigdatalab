@@ -2,6 +2,10 @@
   background-color: rgba(211, 211, 211, .38);
 }
 
+.conditions--light{
+  background-color: #F6F6F6;
+}
+
 .conditions__inn {
   width: 100%;
   max-width: 1400px;
@@ -86,15 +90,12 @@
 }
 
 .conditions__list {
-  display: none;
   justify-content: space-between;
+  display: flex;
 
   @include max(1200) {
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-  &.active {
-    display: flex;
   }
 }
 
@@ -149,6 +150,36 @@
   max-width: 85px;
 }
 
+.conditions__icon--rocket-2 {
+  max-width: 85px;
+}
+
+.conditions__icon--camera-2 {
+  max-width: 70px;
+}
+
+.conditions__icon--team-circle-2 {
+  max-width: 80px;
+}
+
+.conditions__icon--clock-2 {
+  max-width: 70px;
+}
+
+.conditions__icon--calendar-2 {
+  max-width: 70px;
+}
+
+.conditions__icon--price-2 {
+  max-width: 70px;
+}
+
+.conditions__icon--team-2 {
+  max-width: 75px;
+}
+
+
+
 .conditions__icon {
   min-height: 63px;
   margin: 0 auto 30px;
@@ -180,4 +211,77 @@
   max-width: 120px;
   text-align: right;
   color: #3b2350;
+}
+
+
+.conditions-timeline{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1260px;
+  margin: 40px auto 0 auto;
+  position: relative;
+
+  @include max(767) {
+    flex-direction: column;
+    max-width: 200px;
+  }
+
+  &::before {
+    content: '';
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 75%;
+    background-color: #5d3199;
+    margin: auto;
+    @include max(767) {
+      right: auto;
+      width: 3px;
+      height: 70%;
+      top: 38px;
+      left: 11px;
+    }
+  }
+}
+
+.conditions-timeline__item{
+  font-family: $font-light;
+  font-size: 20px;
+  display: block;
+  padding-top: 45px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #3b2350;
+  width: 25%;
+  position: relative;
+  @include max(767) {
+    width: 100%;
+    text-align: left;
+    padding-top: 25px;
+    padding-left: 50px;
+  }
+  &::before {
+    content: '';
+    width: 24px;
+    border: 3px solid #5d3199;
+    height: 24px;
+    position: absolute;
+    top: -11px;
+    left: 0;
+    border-radius: 50%;
+    right: 0;
+    background-color: #F6F6F6;
+    margin: 0 auto;
+    @include max(767) {
+      right: auto;
+      margin: 0;
+      top: 26px;
+    }
+  }
+  b {
+    font-weight: bold;
+  }
 }
