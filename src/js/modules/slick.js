@@ -73,12 +73,18 @@ module.exports = function() {
   });
   $('#program__top-slider').slick({
     infinite: false,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '#program__slider',
     dots: true,
     focusOnSelect: true,
     responsive: [
+      {
+        breakpoint: 1281,
+        settings: {
+          slidesToShow: 3
+        }
+      },
       {
         breakpoint: 1024,
         settings: {

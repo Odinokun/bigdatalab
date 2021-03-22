@@ -49,7 +49,7 @@
   min-height: calc(100vh - 80px);
   padding: 50px;
 
-  @include max(1440) {
+  @include max(1460) {
     display: block;
     min-height: 0;
     padding: 50px 30px;
@@ -125,7 +125,7 @@
   display: flex !important;
   justify-content: center;
   height: auto;
-  padding: 15px 30px;
+  padding: 15px;
   user-select: none;
 }
 
@@ -136,7 +136,7 @@
   align-items: center;
   width: 100%;
   height: auto;
-  padding: 10px 35px;
+  padding: 10px 5px;
   cursor: pointer;
   transition: .5s;
   text-align: center;
@@ -149,10 +149,10 @@
     font-weight: bold;
     line-height: 22px;
     display: block;
-    letter-spacing: 1.98px;
+    letter-spacing: 1.5px;
     color: #503e61;
 
-    @include max(1440) {
+    @include max(1460) {
       font-size: 15px;
       line-height: 1.2;
     }
